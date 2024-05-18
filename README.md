@@ -1,4 +1,4 @@
-# Proletarianit's time to wake up!
+# Proletarian, it's time to wake up!
 
 https://raiurus.github.io/cup_of_lenin/
 

@@ -156,14 +156,28 @@ body {
 <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
 
 <script>
+let stady = true;
+var audio = new Audio();
+  
 function sound(src, current) {
-  current.style.transform = "scale(2)";
-  var audio = new Audio();
+
+  if(stady){
+  current.style.transform = "scale(1.5)";
   audio.src = src;
   audio.autoplay = true;
   audio.onended = function (e) {
     current.style.transform = "scale(1)";
   };
+  
+  } else {
+  audio.pause();
+  audio.currentTime = 0;
+  current.style.transform = "scale(1)";
+  }
+  stady = !stady;
+  
+
+  
 }
 </script>
 
